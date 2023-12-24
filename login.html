@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="check-btn">
+          <ion-icon name="menu-outline"></ion-icon>
+        </label>
+        <label id="logo"><ion-icon name="glasses-outline"></ion-icon></label>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="eyeGlasses.html">Eyeglasses</a></li>
+          <li><a class="active" href="login.html">Sign In</a></li>
+          <li>
+            <a href="cart.html"
+              ><ion-icon id="cart-icon" name="cart-outline"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="">
+        <h3>LOGIN</h4>
+          <div class="credentials">
+          <input type="email" id="Email" placeholder="Email">
+          <ion-icon name="mail" id="mail-icon"></ion-icon>
+          </div>
+          <div class="credentials">
+          <input type="password" id="pass" placeholder="Password">
+            <ion-icon name="lock-closed" id="lock-icon"></ion-icon>
+          </div>
+          <div id="remember-rejester">
+            <div>   <input type="checkbox" id="checkbox">
+          <label for="checkbox">Remember me </label></div>
+            <div id="rejester"> Don't have an account?<a class="forgot-pass-txt" href="">Rejester</a></div>
+          </div>
+          <button>Login</button>
+          <!--social media buttons-->
+          <div id="social-btns"><a href=""><ion-icon name="logo-facebook"></a><a href=""></ion-icon> <ion-icon name="logo-instagram">
+          </ion-icon></a> <a href=""><ion-icon name="logo-github"></ion-icon></a>
+          <a href=""><ion-icon name="logo-slack"></ion-icon></a></div>
+
+      </form>
+    </main>
+    <footer>
+      © 2021 Alraid Optical Co., Ltd.
+    </footer>
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

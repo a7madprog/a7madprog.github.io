@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      Download Copy code .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      .cart-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 15px;
+      }
+
+      .cart-item {
+        border: 1px solid #ccc;
+        padding: 15px;
+        background-color: #f8f8f8;
+      }
+
+      .cart-item-image {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .cart-item-title {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+
+      .cart-item-price {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      .cart-totals {
+        margin-top: 15px;
+        border: 1px solid #ccc;
+        padding: 15px;
+        background-color: #f8f8f8;
+      }
+
+      .cart-totals-total {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .checkout-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 2px;
+        transition-duration: 0.4s;
+        margin-top: 15px;
+      }
+
+      .checkout-button:hover {
+        background-color: #0056b3;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <div class="cart-items">
+        <div class="cart-item">
+          <img
+            src="black-hoodie.jpg"
+            alt="Black Hoodie"
+            class="cart-item-image"
+          />
+          <h2 class="cart-item-title">Black Hoodie</h2>
+          <p class="cart-item-price">€70.00</p>
+        </div>
+        <div class="cart-item">
+          <img
+            src="sleveless-shirt.jpg"
+            alt="Sleveless Shirt"
+            class="cart-item-image"
+          />
+          <h2 class="cart-item-title">Sleveless Shirt</h2>
+          <p class="cart-item-price">€135.00</p>
+        </div>
+      </div>
+      <div class="cart-totals">
+        <p class="cart-totals-total">Total: €315.00</p>
+        <a href="#" class="checkout-button">Proceed to Checkout</a>
+      </div>
+    </div>
+  </body>
+</html>

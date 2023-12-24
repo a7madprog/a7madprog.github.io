@@ -1,0 +1,97 @@
+main {
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: grey solid 1px;
+  background: rgba(169, 169, 169, 0.4);
+  margin-bottom: 128px;
+}
+form h3 {
+  margin-top: 40px;
+  font-size: 2rem;
+  color: #023e8a;
+}
+#Email,
+#pass {
+  margin-left: 20px;
+  width: 15em;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+}
+#mail-icon,
+#lock-icon {
+  margin-right: 15px;
+  font-size: 1.5rem;
+}
+input:focus {
+  outline: none;
+}
+.credentials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 50px;
+  height: 70px;
+  width: 400px;
+  margin-top: 40px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+#remember-rejester {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  color: #023e8a;
+  font-size: 20px;
+}
+#rejester {
+  display: flex;
+  flex-direction: column;
+}
+a.forgot-pass-txt {
+  color: #023e8a;
+}
+a {
+  color: #023e8a;
+}
+ion-icon,
+#social-btns {
+  z-index: -1;
+}
+button {
+  margin-top: 25px;
+  width: 400px;
+  border: 1px solid grey;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #023e8a;
+  height: 70px;
+  border-radius: 50px;
+}
+#social-btns {
+  margin-top: 40px;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  font-size: 50px;
+  color: #023e8a;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(128, 128, 128, 0.5);
+  text-align: center;
+}
