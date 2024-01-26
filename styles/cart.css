@@ -1,11 +1,18 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .product-container {
   display: flex;
   flex-wrap: wrap;
-  z-index: -1;
+  /* z-index: -1; it affected the input numper */
   margin-top: 20px;
   align-items: center;
   border: 1px solid grey;
-  background-color: #00b4d8;
+  background-color: #03045e;
   border-radius: 10px;
   justify-content: space-between;
   width: 50%;
@@ -30,10 +37,8 @@
   color: #f5f5f5;
   text-align: center;
 }
-.delete,
-.up-arrow,
-.down-arrow,
-.product-price {
+.product-price,
+.product-name {
   color: #f5f5f5;
   font-size: 2rem;
   margin-right: 10px;
@@ -48,13 +53,17 @@ footer {
   height: 50px;
   background-color: rgba(128, 128, 128, 0.5);
   text-align: center;
+  position: fixed;
+  bottom: 0;
 }
-#your-cart-txt {
+.your-cart-txt {
   padding-top: 170px;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 3rem;
   color: #023e8a;
+  width: 100%;
 }
 #total {
   margin-top: 70px;
@@ -86,6 +95,7 @@ footer {
   height: 200px;
 }
 
+
 .inputs {
   margin-top: 20px;
   margin-left: 15px;
@@ -108,4 +118,41 @@ input:focus {
 }
 .inputs ion-icon {
   font-size: 35px;
+}
+@media screen and (max-width: 1500px) {
+  .product-container {
+    width: 64%;
+  }
+}
+@media (max-width: 1300px) {
+  .product-image img {
+    width: 100px;
+  }
+  .product-name {
+    color: #f5f5f5;
+    font-size: 1.3rem;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .product-price,
+  .product-name {
+    color: #f5f5f5;
+    font-size: 2rem;
+    margin-right: 10px px;
+    margin-left: 10px;
+  }
+  #quantity {
+    width: 30px;
+  }
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: center;
+    border: 1px solid grey;
+    background-color: #03045e;
+    border-radius: 10px;
+    justify-content: space-between;
+    width: 70%;
+  }
 }

@@ -1,3 +1,23 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (the area on which the thumb scrolls) */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle (the draggable scrolling element) */
+::-webkit-scrollbar-thumb {
+  background: #023e8a;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(169, 169, 169, 0.4);
+}
+
 main {
   padding-top: 200px;
   display: flex;
@@ -20,7 +40,8 @@ form h3 {
   color: #023e8a;
 }
 #Email,
-#pass {
+#pass,
+#confirm-pass {
   margin-left: 20px;
   width: 15em;
   font-size: 1rem;
@@ -50,7 +71,7 @@ input:focus {
 #remember-rejester {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 70%;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
@@ -61,9 +82,7 @@ input:focus {
   display: flex;
   flex-direction: column;
 }
-a.forgot-pass-txt {
-  color: #023e8a;
-}
+
 a {
   color: #023e8a;
 }
