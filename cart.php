@@ -11,7 +11,7 @@ session_start();
   <meta name="description" content="alraed optical e comerse for selling eyeware products" />
   <meta name="keywords" content="sunglasses, rayban, eyeware" />
   <meta name="author" content="Author Name" />
-  <title>Document</title>
+  <title>Your Cart</title>
   <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/nav.css" />
   <link rel="stylesheet" href="styles/cart.css" />

@@ -26,7 +26,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <meta name="description" content="alraed optical e comerse for selling eyeware products" />
+  <meta name="keywords" content="sunglasses, rayban, eyeware" />
+  <meta name="author" content="Author Name" />
+  <title>Sunglasses</title>
   <link rel="stylesheet" href="styles/eyeGlasses.css" />
   <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/nav.css">
@@ -87,8 +90,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           // $desc = $row['product_desc'];
           $image = $row['product_image'];
           $price = $row['product_price'];
-
-
           echo '
                       <div>
                       <div class="products-container">

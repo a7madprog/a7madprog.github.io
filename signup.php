@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </label>
       <label id="logo"><ion-icon name="glasses-outline"></ion-icon></label>
       <ul>
-        <li><a href="home.php">Home</a></li>
+        <li><a href="home.php">Signup</a></li>
         <li><a href="eyeGlasses.php">Eyeglasses</a></li>
         <li><a class="active" href="login.php">Sign In</a></li>
         <li>
@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           <input type="password" id="confirm-pass" placeholder="Confirm Password" required>
           <ion-icon name="lock-closed" id="lock-icon"></ion-icon>
         </div>
-        <div id="remember-rejester">  
+        <div id="remember-rejester">
           <div id="rejester"> Already have an account?<a class="forgot-pass-txt" href="login.php">login</a></div>
         </div>
         <button type="submit" onclick="validatePassword()">Signup</button>

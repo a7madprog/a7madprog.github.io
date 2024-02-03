@@ -1,17 +1,30 @@
 <?php
 require("connection.php");
-
+// Start a new or resume an existing session
 session_start();
+
+// Check if the login form has been submitted
 if (isset($_POST['login'])) {
+  // Retrieve user input from the form
   $username = $_POST['username'];
   $password = $_POST['password'];
+
+  // SQL query to check if the username and password exist in the database
   $sql = "SELECT * from users where username='$username' and password='$password';";
-  $cakeDetails = mysqli_query($con, $sql);
-  $row = mysqli_fetch_assoc($cakeDetails);
+  // Execute the query on the database connection
+  $optDetails = mysqli_query($con, $sql);
+  // Fetch the first row of the result
+  $row = mysqli_fetch_assoc($optDetails);
+
+  // Check if the query returned any rows
   if ($row) {
+    // Set a session variable with the username
     $_SESSION['privilleged'] = $username;
+
+    // Redirect the user to the eyeGlasses.php page
     header("location:eyeGlasses.php");
   } else {
+    // Alert the user if the username or password is incorrect
     echo "<script>alert('Invalid username or password');</script>";
   }
 }
@@ -25,7 +38,10 @@ if (isset($_POST['login'])) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <meta name="description" content="alraed optical e comerse for selling eyeware products" />
+  <meta name="keywords" content="sunglasses, rayban, eyeware" />
+  <meta name="author" content="Author Name" />
+  <title>Login</title>
   <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/login.css" />
   <link rel="stylesheet" href="styles/nav.css" />
@@ -63,8 +79,8 @@ if (isset($_POST['login'])) {
           <input type="password" id="pass" name="password" placeholder="Password" required>
           <ion-icon name="lock-closed" id="lock-icon"></ion-icon>
         </div>
-        <div id="remember-rejester"
-          <div id="rejester"> Don't have an account?<a class="forgot-pass-txt" href="signup.php">Regester</a></div>
+        <div id="remember-rejester" <div id="rejester"> Don't have an account?<a class="forgot-pass-txt"
+            href="signup.php">Regester</a></div>
         </div>
         <button type="submit" name="login">Login</button>
         <!--social media buttons-->

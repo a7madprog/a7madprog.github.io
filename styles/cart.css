@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*Flex items will wrap onto multiple lines, from top to bottom, if they don't fit in one line. */
   margin-top: 50px;
   justify-content: center;
 }
@@ -94,7 +94,6 @@ footer {
   border: 1px solid #023e8a;
   height: 200px;
 }
-
 
 .inputs {
   margin-top: 20px;
